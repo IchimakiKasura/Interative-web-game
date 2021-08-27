@@ -1,0 +1,235 @@
+/* ho? so ur changing ma style - kono baka! */
+/*　進撃の巨人　鬼滅の刃　この素晴らしい祝福を　炎炎ノ消防隊*/
+*{
+    margin:0px;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    background: #262438;
+    text-align: center;
+    transition: 2s;
+    overflow: hidden;
+}
+
+#first_Level,
+#second_Level,
+#third_Level,
+#fourth_Level,
+#fifth_Level,
+#sixth_Level,
+#seventh_Level,
+#eight_Level,
+#nineth_Level {
+    position: relative;
+    top: 25vh;
+    display: none;
+}
+ 
+.text_container {
+    color: white;
+    position: relative;
+    top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    width: 45%;
+    padding: 2vh;
+    box-shadow: 1vh 1vh white;
+    border-radius: 1vh;
+    transition: 0.5s;
+}
+
+.text_container h1 {
+    font-size:3.2vh;
+    text-align: center;
+}
+
+#second_Level a {
+    background: white;
+    color: black;
+    text-decoration:none;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    width: 50vh;
+    height: 7vh;
+    font-size: 4vh;
+    font-family: Tahoma;
+    border: none;
+    border-radius: 1vh;
+    transition: 0.2s;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+
+#second_Level a:hover, #second_Level a:focus{
+    background: red;
+    color: white;
+}
+
+.Input_d {
+    position: relative;
+    text-transform: lowercase;
+    top: 20vh;
+    text-align: center;
+    width: 40vh;
+    height: 5vh;
+    font-size: 4.5vh;
+    font-size-adjust: initial;
+    font-family: Tahoma;
+}
+
+#main_start{
+    text-align: center;
+    position: relative;
+    top: 45vh;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding-left: 13vh;
+    padding-right: 13vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 5vh;
+    margin: auto;
+    white-space: nowrap;
+}
+
+#main_start:hover, #main_start:active, #main_start:focus{
+    background: #ff3d74;
+    color:black;
+}
+
+#main_start:before{
+    content: '';
+    position: absolute;
+    top: -1vh;
+    bottom: -1vh;
+    left: -1vh;
+    right: -1vh;
+    z-index: -1;
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+#main_start:hover:before, #main_start:active:before, #main_start:focus:before{
+    background: #ff3d74;
+    filter: blur(20px);
+}
+
+#fourth_Level button {
+    position: relative;
+    top: 20vh;
+    border: none;
+    padding: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    width: 20%;
+    border-radius: 20px;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 2.5vh;
+    transition: 0.5s;
+    margin: auto;
+	cursor: pointer;
+}
+
+#fourth_Level .btn_div {
+    position: relative;
+    top: -20px;
+    white-space: nowrap;
+} 
+
+#code_Container {
+    position: relative;
+    top: 17vh;
+    width: 70vh;
+    border-radius: 10px;
+    margin: auto;
+    text-align: left;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    background: rgb(107, 107, 107);
+}
+
+#sixth_Level button {
+    border: none;
+    position: relative;
+    top: 20vh;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+#sixth_Level button:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+#sixth_Level button:active {
+    background-color: crimson;
+    color: black;
+}
+
+#sixth_Level div p, #sixth_Level div span {
+    font-family: monospace;
+}
+
+#nineth_Level .btn_div {
+    position: relative;
+    top: -20px;
+    white-space: nowrap;
+} 
+
+/* Main menu animation */
+@keyframes start_anim {
+    10%{
+        top: +50vh;
+        font-size: 25px;
+    }
+    100%{
+        padding: 0px;
+        font-size: 1px;
+        top: -300px;
+        display: none;
+        filter: blur(10vh);
+    }
+}
+
+/* Animations */
+
+@keyframes next_Level_anim_in {
+    0%{
+        opacity: 0;
+        filter: blur(1vh);
+        top: -40vh;
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+        top: 25vh;
+    }
+}
+
+@keyframes next_Level_anim_out {
+    0%{
+        opacity: 1;
+        filter: blur(0px);
+        top: 25vh;
+    }
+    100%{
+        opacity: 0;
+        filter: blur(1vh);
+        top: -40vh;
+    }
+}

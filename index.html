@@ -1,0 +1,88 @@
+<!-- to anyone reading this nice -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id='taytol'>ウェーブーガーム</title>
+        <style>
+            @import url('web style.css');
+        </style>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <a href='javascript:void(0)' type='submit' onclick='start();' onfocus="this.blur();" id='main_start'>Start</a>
+        </div>
+        <div id='first_Level'>
+           <div id='text_container_1' class="text_container">
+               <h1 id='h1_clue'>Type the Number to get to the next Level</h1>
+               <h2 id='h2_1' style='font-size:3.2vh;'>13, 518, 22, 65, 56, 69</h2>
+           </div>
+           <input maxlength="16" class='Input_d' type="text" id="level_1_input" onkeypress="input_Check_Lv1(event);"></input>   
+        </div>
+        <div id='second_Level'>
+            <div id='text_container_2' class="text_container">
+                <h1 id='h1_txt'>Don't click the button!</h1>
+            </div>
+            <a href="javascript:void(0)" onfocus="this.blur();" onclick="alert_Message('button_1')" id='btn'>CLICK ME I DARE YOU</a>
+        </div>
+        <div id='third_Level'>
+            <div id='text_container_3' class="text_container">
+                <h1 id='h1_txt_3' style="cursor: default;">Where's the <a onclick="hidden_button()">button?</a></h1>
+            </div>
+        </div>
+        <div id='fourth_Level'>
+            <div id='text_container_4' class="text_container">
+                <h1 id='h1_txt_4'>Greenify them all</h1>
+            </div>
+            <div class="btn_div">
+                <button id='btn_1' onclick="onstart_Lvl_4(true, 'btn1');blur();"></button>&nbsp;&nbsp;<button id='btn_2' onclick="onstart_Lvl_4(true, 'btn2');blur();"></button>&nbsp;&nbsp;<button id='btn_3' onclick="onstart_Lvl_4(true, 'btn3');blur();"></button><br><br>
+                <button id='btn_4' onclick="onstart_Lvl_4(true, 'btn4');blur();"></button>&nbsp;&nbsp;<button id='btn_5' onclick="onstart_Lvl_4(true, 'btn5');blur();"></button>&nbsp;&nbsp;<button id='btn_6' onclick="onstart_Lvl_4(true, 'btn6');blur();"></button><br><br>
+                <button id='btn_7' onclick="onstart_Lvl_4(true, 'btn7');blur();"></button>&nbsp;&nbsp;<button id='btn_8' onclick="onstart_Lvl_4(true, 'btn8');blur();"></button>&nbsp;&nbsp;<button id='btn_9' onclick="onstart_Lvl_4(true, 'btn9');blur();"></button><br><br>
+            </div>
+       </div>
+        <div id='fifth_Level'>
+            <div id='text_container_5' class="text_container" >
+                <h1 id='h1_txt_5' >The next Level will be <span id='fifth_spell_1' >_ </span><span id='fifth_spell_2'>_ </span><span id='fifth_spell_3'>_ </span><span id='fifth_spell_4'>_ </span><span id='fifth_spell_5'>_ </span><span id='fifth_spell_6'>_</span></h1>
+            </div>
+        <input id="input_5" onblur="this.focus();" onkeyup="guessTheLetter(event);event.preventDefault();" maxlength="1";  type="text" style="position:absolute;opacity:0"></input>
+        </div>
+        <div id='sixth_Level'>
+            <div id='text_container_6' class="text_container" >
+                <h1 id='h1_txt_6' >Finish the code to proceed to the next level</h1>
+            </div>
+            <div id="code_Container">
+                <p><span style="color:blue">level</span> = prompt(<span style="color:rgb(92, 50, 33)">"proceed to the next level"</span>);</p>
+                <p><span style="color:rgb(71, 20, 100)">if</span>( <input type="text" id="code_First" maxlength="5" style="font-family: monospace; width: 40px; height: 18px;border: none;color: blue; text-align: center;"></input> == <span style="color:rgb(92, 50, 33)">"Yes"</span>) { <span style="color:rgb(106, 189, 95)">//it's case sensitive!</span></p>
+                <p>&nbsp;&nbsp;&nbsp;proceed <input type="text" id="code_Second" style="font-family: monospace; width: 18px; height: 18px;border: none; text-align: center;" maxlength="2"></input>;</p>
+                <p>}</p>
+            </div>
+            <button onclick="miniCodeQuiz();" onfocus="this.blur();">Confirm</button>
+        </div>
+        <div id='seventh_Level'>
+            <div id='text_container_7' class="text_container">
+                <h1 id='h1_txt_7'>What color of the button on the start</h1>
+            </div>
+            <input maxlength="16" class='Input_d' type="text" id="level_7_input" onkeypress="input_Check_Lv7(event);"></input>   
+         </div>
+         <div id='eight_Level'>
+            <div id='text_container_8' class="text_container">
+                <h1 id='h1_txt_8'>A fruit that is also a color?</h1>
+            </div>
+            <input maxlength="16" class='Input_d' type="text" id="level_8_input" onkeypress="input_Check_Lv8(event);"></input>   
+         </div>
+        <div id='nineth_Level'>
+            <div id='text_container_8' class="text_container">
+                <h1 id='h1_txt_9'>Three Primary colors</h1>
+            </div>
+            <div class="btn_div">
+                <button>Red</button>
+            </div>
+         </div>
+        <script src='Variables.js'></script>
+        <script src='n_LevelFunc.js'></script>
+        <script src='Functions.js'></script>
+    </body>
+
+</html>
